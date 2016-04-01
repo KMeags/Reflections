@@ -1,0 +1,61 @@
+Reflections: Git and Githup (Learning Version Control)
+Lesson 1:
+
+How can viewing different versions help me spot a bug?
+
+	If I've made a version already that works and then I break a new file, it's a lot easier for me to compare
+	an old file to the new one and see exactly where I went wrong. With version control, it is important
+	to use good coding technique. Start small, get something that works and build on it.
+
+	See notebook (red) for notes on learning technique (Reflect, Plan(Hypothesis, Test, Act(experience))
+
+How can having easy access to entire file history make me a more efficient programmer long-term?
+
+	If I have all of the file history, I can find working versions easily, compare them to the newer or broken
+	versions, and correct errors quickly.
+	
+Note: Git is a version-control system. (Other, SVN or HG)
+Still a bit uncomfortable with the relationship between my Virtual Linux OS and my Windows in Gitbash. I think I
+will learn as time goes on. If in review of this I feel I still haven't grasped it, maybe it's time to familiarize
+myself.
+
+Reflection: What are the pros and cons of manually choosing when to create a commit (change record in Git)?
+vs. Auto?
+
+For programming, it's most efficient to save manually because the way changes are made varies so drastically
+it cannot logically be condensed to either "time" or "line" based decisions. Obviously user-error could be problematic
+but getting in the habit of committing properly is long-term best for programming and program-logic-based thinking.
+
+Repository: A collection of commits across multiple files
+
+Reflection: Why do some VC systems like Git allow repositories where others like Google Docs dont?
+Firstly, Google Docs usually deals with just one file type. Also, depending on what it's supposed to be used for, the VC
+might have good reason to save only for individual files for clarity. Repositories in Git allow me to see the way I'm 
+changing an overall project instead of just the file, since multiple files make up a project.
+
+So far I've figured out I can use some Git commands from CMD. Okgot 
+git clone (creates a clone of a repository)
+git config --global color.ui auto  #Changes colors for edits in git log 
+git log --stat #log of commits --with changes
+git diff #shows changes of commit
+
+Reflection: How do you use commands git log and git diff?
+Git log shows me a log of the commits to the file, while git diff followed by two ID's for commits will show me the diff
+between the two files
+
+git checkout #resets all files in repository to version they were at time of previous commit
+ctrl insert is copy
+shift insert is paste
+
+.bash_profile stores my settings for my prompt
+write is my command to open Notepad++
+
+Reflection: Why do I want to use Gitbash?
+I want to use Gitbash primarily to help me building my first app, but it appears it will have 
+many more uses too.
+
+Lesson 1: Commands
+git log -- lists all commits in a repository, beginning with most recent
+git checkout(ID) -- temporarily resets the commits in a repository to their state at the time of commit
+git clone(URL) -- copy an entire repository to my computer
+git diff(ID1 ID2) -- prints all the differences between two commits
