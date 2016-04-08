@@ -1,3 +1,17 @@
 When would you want to use a remote repository instead of kepeing all your work local?
 
 I would like to use this when I am working from different computers or with other people on a project
+
+GitHub!!!
+git push remote (branch)
+git pull remote (branch)
+git remote
+> origin
+
+SSH Keys??? Sorta got it
+
+Why might you want to always pull changes manually rather than having Git automatically stay up to date
+with remote?
+
+If working with multiple people, allows us to work independently without overwriting each others work. 
+Extra backup
