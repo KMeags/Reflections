@@ -1,0 +1,61 @@
+What happens when I initialize a repository? Why do you need to do it?
+
+Initializing a repository is essentially adding a hidden .git file/directory to my repository so that I can
+save commits to the directory.
+
+I have learned about version correction and how to find errors in games and files. I would now like to still
+learn more about the difference between CMD and Linux commands, why I'd need a virtual machine
+
+Reflection Staging Area (How is it different from working directory, repository?) What value does it offer?
+The working directory is the directory I am currently working it, and contains my repository. My repository is
+my .git file inside of my directory or rather a directory with a .git file, which shows me my git commits. The 
+staging area is a temporary holding area for my commits before I commit them to my .git file so I can be more
+specific and exact about how I commit things
+
+git reset
+diff --staged
+git diff
+git add
+git checkout master
+
+How can you use the staging area to make sure youu have one commit per logical change?
+
+Use the git status command to review what you are commiting with each commmit, then commit it with an appropriate
+message
+
+Branches!!
+
+git branch name
+git checkout name
+	-- now on branch name
+	git add game.js
+	git commit
+
+Reflections: What are some situations it would be useful to use branches to organize my history?
+If I were starting a new "version" of my game, I would be able to save multiple new additions for a new branch
+without changing my master branch.
+
+Master branch = "production quality -- never breaks"
+
+git log --graph --oneline master coin
+git checkout -b = creates a new branch and checks it out
+
+Reflection: How do the diagrams help you visualize the branch structure?
+I can see which branches are accessible and where I am on my branch
+
+Reflection: What is the result of merging two branches together? Why do we represent it in the diagram?
+When I merge two branches, I add the changes to one branch to the changes in another. Interestingly, if there
+were changes to the same like in some files, the Merge will readout an error, if I open the file, it shows me with 
+<<<<<<< HEAD
+
+========
+
+>>>>>>> other
+
+where the line differences are. With some careful reading I can fix my problem. <<< I do this by looking at what was changed.
+In the case of my next exercise, my code was added within a function in the master branch. This is not an issue, so I should delete
+the conflicting (repeated) code from the easy mode and leave the call of the function alone.
+
+Reflection: What are the pros and cons of automatic merging vs. manual merging?
+If I merged manually I could get confused in longer lines of code. Automatic meging with conflicting
+makes it easier to merge and fix any possible errors, though it isn't always perfect.
