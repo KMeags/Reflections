@@ -15,3 +15,24 @@ with remote?
 
 If working with multiple people, allows us to work independently without overwriting each others work. 
 Extra backup
+
+Fork, Clone, Branch difference
+Forking is copying from Github to Github
+Cloning is copying from next/other machine to my computer/Git
+Branching is creating a copy of my master branch within my repository
+
+Git push origin master
+
+Describe the difference between fork- nevermind^ lol
+
+git pull origin 
+master = git fetch origin + git merge master origin/master
+origin/master = local copy of GitHub master
+master = local master
+
+origin/master doesn't update without being fetched. when fethced, it syncs to the GitHub on new branch from my 
+master. I have to merge the two to make it effectively a "pull"
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+Perhaps if I am getting on a plane or will be away from work for a while, I can see the last known copy compared with 
+my own work, or the work that has been done since I left, so I know what has changed.
