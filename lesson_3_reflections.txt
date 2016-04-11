@@ -36,3 +36,21 @@ master. I have to merge the two to make it effectively a "pull"
 What is the benefit of having a copy of the last known state of the remote stored locally?
 Perhaps if I am getting on a plane or will be away from work for a while, I can see the last known copy compared with 
 my own work, or the work that has been done since I left, so I know what has changed.
+
+How would you collanb without using Git or GitHub? What would be easier? Harder?
+I would probably use google docs or look for another version-control software. I'm not very familiar with other forms
+of this software and would have to look around. I'm sure keeping track of older versions using simple file systems on 
+Windows would be pretty hard.
+
+fork - copy of branch in GitHub
+fetch - get copy without merging automatically
+pull request - request to merge two branches in GitHub
+fast-forward merge - merge that can be done between ancestors
+
+When would you want to make changes in a seperate branch rather than directly in master? What benefit does each approach
+have?
+
+Make changes in seperate branches is good for an extra layer of security, such as if I were testing new features for a 
+project or wanted to make experimental changes. Perhaps I could also be making a different "version"
+
+If I am making changes in master directly, I am more likely to be making small changes or pushing to GitHub
